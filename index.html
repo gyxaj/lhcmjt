@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>联合传媒集团</title>
+        <style>
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+			li{
+				list-style:none;
+			}
+			a{
+				text-decoration:none;
+				color:#000000;
+			}
+			img{
+				display:block;
+			}
+			h1,h2,h3{
+				font-weight:normal;
+			}
+			.gWidth{
+				width:943px;
+				margin:0 auto;
+			}
+			.clearfix::after{
+				content:'';
+				display:block;
+				clear:both;
+			}
+			.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+			body{
+				width: 1440px;
+				margin: 0 auto;
+			}
+			.top{
+				width:1440px;
+				border-top:6px solid #CF0000;
+				padding-top:24px;
+				padding-bottom: 38px;
+			}
+			.top h1{
+				font-size:36px;
+				font-weight:bold;
+				background:url("images/logo.png") left center no-repeat;
+				padding-left: 78px;
+			}
+			.top ul{
+				width:700px;
+				margin-left: 60px;
+				padding-left: 20px;
+				border-left:2px solid #DEDEDE;
+			}
+			.top ul li{
+				font-size:14px;
+				color:#2E2E2E;
+				float: left;
+				padding-right:20px;
+				line-height:24px;
+			}
+			.top ul li.l4{
+				padding-left: 70px;
+			}
+			.top .d2{
+				margin-top:-20px;
+				text-align:right;
+			}
+			.top .d2 .link a{
+				font-size:12px;
+				color:#858585;
+				line-height:24px;
+			}
+			.top .d2 p{
+				font-size:14px;
+				color:#858585;
+				font-weight:bold;
+			}
+			.nav{
+				width:1440px;	
+				height:63px;
+				background:#F4F4F4;	
+			}
+			.nav ul{
+				padding-left:42px;
+			}
+			.nav ul a{
+				display:inline-block;
+				height:44px;
+				font-size:16px;
+				color:#131313;
+				float: left;
+				line-height:48px;
+				margin-right: 53px;
+			}
+			.nav ul a.act,.nav ul a:hover{
+				color:#D11F2D;
+				border-bottom:2px solid #D11F2D;
+			}
+			.cont1{
+				background:url("images/cont1.png") no-repeat;
+			}
+			.cont1 .d1,.cont2 .d2,.cont3 .d3,.cont4 .d4,.cont5 .d5,.cont6 .d6,.cont7 .d7{
+				padding-top: 30px;
+			}
+			.cont1 .d1 h3,.cont2 .d2 h3,.cont3 .d3 h3,.cont4 .d4 h3,.cont5 .d5 h3,.cont6 .d6 h3,.cont7 .d7 h3{
+				height: 38px;
+				font-size: 36px;
+				line-height: 38px;
+				color:#000;
+				font-family: "微软雅黑";
+				border-left:7px solid #EA5413;		
+				padding-left: 18px;
+				margin-bottom: 30px;
+			}
+			.cont1 .d1 h3 span,.cont2 .d2 h3 span,.cont3 .d3 h3 span,.cont4 .d4 h3 span,.cont5 .d5 h3 span{
+				font-size: 24px;
+				color:#6B6B6B;
+				font-family: "微软雅黑";
+				padding-left: 10px;
+			}
+			.cont1 .d1 ul li a{
+				color:#fff;
+			}
+			.cont1 .d1 ul li{
+				margin-bottom: 19px;
+
+			}
+			.cont1 .d1 ul li a p{
+				float: left;
+				width: 259px;
+				height: 38px;
+				line-height:38px;
+				font-size: 20px;
+				background:url("images/cont1-pic2.png")no-repeat;
+				margin-left: -20px;
+				margin-top: 2px;
+				vertical-align: middle;
+				padding-left: 20px;
+			}
+			.cont1 .d1 ul li a span{
+				display: inline-block;
+				width: 43px;
+				height: 43px;
+				border-right:1px #fff solid;
+				border-radius:50%;
+				background:#FF0000; /*#6B6B6B*/
+				font-size: 24px;
+				color:#fff;
+				line-height:43px;
+				text-align: center;
+				float: left;
+				position: relative;
+				z-index:10;
+			}
+			.cont1 .d1 ul li.act a span,.cont1 .d1 ul li a span:hover{
+				background:#6b6b6b;
+			}
+			.cont1 .d1 ul li.act a p,.cont1 .d1 ul li a p:hover{
+				background:url("images/cont1-pic3.png")no-repeat;
+			}
+			.cont1 .d1 ul li.act{
+				position: relative;
+				padding-bottom: 190px;
+			}
+			.cont1 .d1 ul li .text{
+				width: 834px;
+				height: 129px;
+				border:1px solid #B1B4B5;
+				background:#FAFBFB;
+				opacity:0.8;
+				border-radius:8px;
+				padding:20px 28px;
+				position: absolute;
+				top: 60px;
+			}
+			.cont1 .d1 ul li .text p{
+				font-size: 14px;
+				color:#000;
+				line-height:24px;
+				text-indent: 2em;
+
+			}
+			.cont2{
+				background:url("images/cont2.png") no-repeat;
+			}
+			.cont2 .pic{
+				width: 827px;
+				margin-left:215px;
+				margin-top:140px;
+				padding-bottom: 140px;
+				position: relative;
+			}
+			.cont2 .pic img{
+				float: left;
+				margin-right: 44px;
+				margin-bottom: 38px;
+			}
+			.cont2 .pic .text{
+				position: absolute;
+				width: 311px;
+				height: 80px;
+				background:#F4F2EB;
+				top:-146px;
+				left:75px;
+				border-radius:5px;
+				padding:20px 24px;
+			}
+			.cont2 .pic .text h4{
+				font-size: 16px;
+				color:#668EB1;
+			}
+			.cont2 .pic .text p{
+				font-size: 14px;
+				line-height:17px;
+				color:#626262;
+			}
+			.cont3{
+				background:url("images/cont3.png") no-repeat;
+			}
+			.cont3 .pics{
+				margin-left: 133px;
+				padding-bottom: 123px;
+			}
+			.cont3 .pics img.pic{
+				width: 269px;
+				height: 51px;
+				border:15px solid #E0DDDD;
+				margin-left: -15px;
+				margin-bottom: 20px;
+			}
+			.cont3 .pics img{
+				margin-bottom: 36px;
+			}
+			.cont3 .text{
+				width: 394px;
+				background:#CCC7C7;
+				padding: 30px;
+				padding-bottom: 95px;
+				margin-top: -35px;
+				margin-right:20px;
+				position: relative;
+			}
+			.cont3 .text .div{
+				background:url("images/cont3-sanjiao.png") no-repeat left ;
+				/*padding-left: 20px;*/
+				position: relative;
+			}
+			.cont3 .text .div img{
+				float: left;
+			}
+			.cont3 .text .div p{
+				font-size: 14px;
+				color:#000;
+				line-height:24px;
+			}
+			.cont3 .text .div p.p1{
+				margin-left: 275px;
+			}
+			.cont3 .text .div p.p2{
+				text-indent: 2em;
+				margin-top: 2px;
+			}
+			.cont4{
+				background:url("images/cont4.png")no-repeat;
+			}
+			.cont4 .pics ul{
+				padding-bottom: 140px;
+			}
+			.cont4 .pics ul li{
+				float: left;
+				padding-right: 50px;
+			}
+			.cont4 .pics ul li.l2{
+				padding-right: 0;
+			}
+			.cont4 .pics ul li div.d{
+				width: 188px;
+				height: 46px;
+				background:#20939C;
+				border-radius:5px;
+				text-align: center;
+				margin-top: 10px;
+				padding-top: 6px;
+				padding-bottom: 6px;
+			}
+			.cont4 .pics ul li div.d p{	
+				font-size:16px;			
+				color:#fff;
+				font-family: 微软雅黑;
+				line-height:24px;
+			}
+			.cont4 .pics ul li.l1{
+				position: relative;
+			}
+			.cont4 .pics ul li div.text{
+				position: absolute;
+				width: 284px;
+				height: 265px;
+				background:#DCDCDC;
+				padding-left: 18px;
+				padding-right:18px;
+				padding-top: 25px;
+				top:0;
+				left: 200px;
+			}
+			.cont4 .pics ul li div.text p{
+				text-indent: 2em;
+				font-size:14px;
+				color:#222222;
+				line-height:24px;
+			}
+			.cont5{
+				background:url("images/cont5.png") no-repeat;
+			}
+			.cont5 .d5 h3,.cont5 .d5 h3 span{
+				color:#fff;
+			}
+			.cont5 .d5 .text{
+				width: 702px;
+				margin-left:40px;
+				padding-bottom: 155px;
+			}
+			.cont5 .d5 .text h4{
+				font-size: 18px;
+				color:#FFf;
+				line-height:24px;
+				font-family: "微软雅黑";
+				margin-bottom: 18px;
+			}
+			.cont5 .d5 .text p{
+				font-size: 14px;
+				color:#fff;
+				line-height:24px;
+			}
+			.cont5 .d5 .text p.p{
+				text-indent: 1.5em;				
+			}
+			.cont6,.cont7{
+				background:#D9E0E5;
+			}/*
+			.cont6 .d6 ul li{
+				float: left;
+			}*/
+			.cont6 .d6 ul li.l{
+				margin-bottom: 14px;
+			}
+			.cont6 .d6 ul li p.p{
+				width: 126px;
+				height: 34px;
+				line-height:34px;
+				background:#fff;
+				border-radius:5px;
+				text-align: center;
+				color:#2A2A2A;
+				font-size: 14px;
+				float: left;
+			}
+			.cont6 .d6 ul li .tu1{
+				margin-left: 33px;
+				width: 301px;
+				height: 77px;
+				background:#fff url("images/cont6-pic1.png") no-repeat 22px;
+				padding-left: 74px;
+				float: left;
+				font-size: 14px;
+				border-radius:5px;
+			}
+			.cont6 .d6 ul li .tu2{
+				background-image:url("images/cont6-pic2.png");
+			}
+			.cont6 .d6 ul li .tu1 p{
+				margin-left:17px;
+				line-height:24px;
+			}
+			.cont6 .d6 ul li .tu1 p.p1{
+				padding-top: 13px;
+			}
+			.cont6 .d6 ul li .tu3 img{
+				float: left;
+				margin-left: 33px;
+			}
+			.cont6 .d6 ul li .text{
+				float: left;
+				width: 418px;
+				height: 112px;
+				background:#fff;
+				font-size: 14px;
+				margin-left:40px;
+				padding-left: 40px;
+				padding-top: 15px;
+				margin-bottom: 30px;
+			}
+			.cont6 .d6 ul li .text p{
+				line-height:24px;
+			}
+			.cont7 .d7 img{
+				float: left;
+			}
+			.cont7 .fr .text1{
+				width: 356px;
+				background:#F2F2F2;
+				border-radius:5px;
+			}
+			.cont7 .fr .text1 .p1{
+				height: 30px;
+				border-radius:5px;
+				padding-left: 16px;
+				line-height:30px;
+				font-weight: bold;
+				font-size: 14px;
+				color:#fff;
+				background:#282828 url("images/cont7-jia.png") right no-repeat;
+				/*padding-right: 15px;*/
+
+			}
+			.cont7 .d7 .text1 ul{
+				padding-bottom: 10px;
+			}
+			.cont7 .d7 .text1 ul li{
+				margin-right:24px;
+				margin-left:24px;
+				padding-top: 16px;
+				padding-bottom: 5px;
+				border-bottom:1px dashed #979797;
+			}
+			.cont7 .d7 .text1 ul li p{
+				font-size: 12px;
+				line-height:18px;
+			}
+			.cont7 .d7 .text2{
+				padding-top: 16px;
+				margin-top: 12px;
+				width: 356px;
+				background:#F2F2F2;
+				padding-bottom: 16px;
+				margin-bottom: 24px;
+			}
+			.cont7 .d7 .text2 p{
+				font-size: 14px;
+				line-height:24px;
+				margin-left:24px;
+			}
+			.footer{
+				width: 1440px;
+				height: 93px;
+				background:#000;
+			}
+			.footer p{
+				font-size: 12px;
+				text-align: center;
+				color:#fff;
+				padding-top: 20px;
+
+			}
+		</style>
+    </head>
+    <body>
+    	<div class="box">
+    		<div class="top">
+    			<div class="gWidth clearfix"> 
+	    			<h1>联合传媒集团</h1>
+	    			<ul class="fl">
+	    				<li>中桥联合国际传媒广告（北京）有限公司</li>
+	    				<li>华木坊文化传媒（北京）有限公司</li>
+	    				<li class="l3">北京木成金营销顾问有限公司 </li>
+	    				<li class="l4">北京华文影仕文化传媒有限公司</li>
+	    			</ul>
+	    			<div class="d2 fr">
+		    			<div class="link">  			
+			    			<a href="###" class="a1">手机网</a> |   
+			    			<a href="###">网站地图</a> |  
+			    			<a href="###">收藏我们</a>
+		    			</div>
+		    			<p>010-67648198    010-57510181</p>
+	    			</div>
+    			</div>
+    		</div>
+
+    		<div class="nav">
+    			<ul class="gWidth">
+    				<li><a href="###">首页</a></li>
+    				<li><a href="###" class="act">企业介绍</a></li>
+    				<li><a href="###">业务范围</a></li>
+    				<li><a href="###">企业文化</a></li>
+    				<li><a href="###">员工生活</a></li>
+    				<li><a href="###">大事记</a></li>
+    				<li><a href="###">加入我们</a></li>
+    				<li><a href="###">联系方式</a></li>
+    			</ul>
+    		</div>
+
+    		<div class="banner">
+    			<img src="images/banner.png" height="435" width="1440" alt="">
+    		</div>
+
+    		<div class="content">
+    			<div class="cont1 clearfix">
+    				<div class="gWidth">
+    					<div class="d1 clearfix">
+    						<h3>杂志<span>Magazine</span></h3>
+    						<ul class="fl clearfix">
+    							<li class="act clearfix">
+    								<a href="###">
+    									<span>01</span>
+    									<p>《中国红木古典家具》</p>
+    								</a>
+    								<div class="text fl">
+		    							<p>《中国红木古典家具》杂志创刊于2004年，是全球第一本中国传统家具的行业杂志，是中国消费者保护基金会打假工作委员会红木家具消费维权办公室的指导刊物。并定位于现状于趋势、新闻与事件、文化与学术、企管与经营、产业与品牌五大板块。</p>
+		    							<p>该杂志的读者定位主要是：全国红木家具生产、加工企业；全国红木家具大采购商；全国红木家具经销商；红木收藏家；红木及木作行业专家；红木发烧友（执着爱好者）</p>
+		    							<p>该杂志为双月刊，每双月1日出刊，全国公开发行。发行量6万册，价格60元/册，规格250mm×340mm。</p>
+		    						</div>
+    							</li>
+    							<li class="clearfix">
+    								<a href="###">
+    									<span>02</span>
+    									<p>《中式生活》</p>
+    								</a>
+    							</li>
+    							<li class="clearfix">
+    								<a href="###">
+    									<span>03</span>
+    									<p>《红木》</p>
+    								</a>
+    							</li>
+    							<li class="clearfix">
+    								<a href="###">
+    									<span>04</span>
+    									<p>《中华木作》</p> 
+    								</a>
+    							</li> 
+    						</ul>
+    						<div class="pic fr">
+    							<img src="images/cont1-pic.png" height="411" width="481" alt="">
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="cont2 clearfix">
+    				<div class="gWidth">
+    					<div class="d2">
+    						<h3>网站<span>Web site</span></h3>
+    						<div class="pic clearfix">
+    							<div class="text">
+    								<h4>中国红木古典家具网</h4>
+    								<p>（www.zghmgdjjw.com 或 www.hm-3223.net），创办于2003年，由中国红木古典家具理事会主管，是红木家具行业第一个专业门户网站。</p>
+    							</div>
+    							<img src="images/cont2-pic1.png" height="43" width="179" alt=""><img src="images/cont2-pic2.png" height="43" width="179" alt=""><img src="images/cont2-pic3.png" height="43" width="179" alt=""><img src="images/cont2-pic4.png" height="43" width="179" alt=""><img src="images/cont2-pic5.png" height="43" width="179" alt="">
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="cont3 clearfix">
+    				<div class="gWidth clearfix">
+    					<div class="d3 clearfix">
+    						<h3>影视<span>Mivoes</span></h3>
+    						<div class="pics fl">
+    							<img src="images/cont3-pic1.png" height="53" width="273" alt="" class="pic"><img src="images/cont3-pic2.png" alt=""><img src="images/cont3-pic3.png" alt="">
+    						</div>
+    						<div class="text fr">
+    							<div class="div">
+    								<img src="images/cont3-pic4.png" height="162" width="239" alt="">
+    								<p class=" p1">《CCTV发现之旅•中式生活》2013年开通，是中央电视台唯一一档以中式符号为标识的人文文化纪录片栏目，首年荣获“CCTV发现之旅特别贡献奖”.</p>
+    								<p class="fl p2">   节目每期时长30分钟，每周六黄金时段在CCTV发现之旅频道首播，次日3次重播。</p>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="cont4 clearfix">
+    				<div class="gWidth clearfix">
+    					<div class="d4 clearfix">
+    						<h3>新媒体<span>New media</span></h3>
+    						<div class="pics clearfix">
+    							<ul class="clearfix">
+    								<li class="l1">
+    									<img src="images/cont4pic.png" height="190" width="190" alt="">
+    									<div class="d">
+    										<p>红木内参</p>
+    										<p>微信号：hmnc2014</p>
+    									</div>
+    									<div class="text fl">
+    										<p>《红木内参》（微信号：hmnc2014）是由中国红木古典家具理事会主办，致力打造红木行业专业、深度、快速的新媒体形式。它是理事会成员的交流平台，主要发而中国红木产业的各类信息动态，向理事会会员推送最新、最专业、最全面的行业内部参考消息。每周五期，通过智能手机微信公众帐号平台进行点对点信息发布。《红木内参》将最快速反映行业事件及相关信息，有极强的参考价值。</p>
+    									</div>
+    								</li>
+    								<li>
+    									<img src="images/cont4pic.png" height="190" width="190" alt="">
+    									<div class="d">
+    										<p>红木内参</p>
+    										<p>微信号：hmnc2014</p>
+    									</div>
+    								</li>
+    								<li>
+    									<img src="images/cont4pic.png" height="190" width="190" alt="">
+    									<div class="d">
+    										<p>红木内参</p>
+    										<p>微信号：hmnc2014</p>
+    									</div>
+    								</li>
+    								<li class="l2">
+    									<img src="images/cont4pic.png" height="190" width="190" alt="">
+    									<div class="d">
+    										<p>红木内参</p>
+    										<p>微信号：hmnc2014</p>
+    									</div>
+    								</li>
+    							</ul>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="cont5 clearfix">
+    				<div class="gWidth clearfix">
+    					<div class="d5 clearfix">
+    						<h3>营销顾问<span>Marketing Consultant</span></h3>
+    						<div class="fl">
+    							<img src="images/cont5pic.png" height="135" width="147" alt="">
+    						</div>
+    						<div class="text fl">
+    							<h4>北京木成金营销顾问有限公司</h4>
+    							<p class="p">公司概况：我公司是国内首家以中式文化为核心、专注于红木产业和木文化产业的传媒集团，是传统媒体与新媒体相结合的新兴媒体机构。</p>
+    							<p class="p">公司规模：公司有10年以上的历史，总部下辖管理、产品、销售、综合、保障、培训、交易7大系统，20余个中心级部门，员工近300人，拥有最具实力的红木行业专家团队。公司有独立的办公大楼，在全国各地设有10余个派出机构。</p>
+    							<p class="p">公司业务：包括杂志出版、网络运营、影视制作、新媒体传播及营销顾问服务等。</p>
+    							<p>杂志包括《中国红木古典家具》、《红木》、《中式生活》、《中华木作》，均为双月刊，公开发行。</p>
+    							<p>网络运营包括中国红木古典家具网、红木网、红木之家网、中式生活网、中华木作网、等10余个线上网站。</p>
+    							<p class="p"> 杂志包括《中国红木古典家具》、《红木》、《中式生活》、《中华木作》，均为双月刊，公开发行。</p>
+    							<p>网络运营包括中国红木古典家具网、红木网、红木之家网、中式生活网、中华木作网、等10余个线上网站。</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="cont6 clerfix">
+    				<div class="gWidth clerfix">
+    					<div class="d6 clerfix">
+    						<h3>指导机构</h3>
+    						<ul class="clerfix">
+    							<li class=" l clearfix">
+    								<p class="p">指导机构</p>
+    								<div class="tu1">
+    									<p class="p1">中华木工委</p>
+    									<p class="p2">（中华文化促进会木作文化工作委员会）</p>
+    								</div>
+    								<div class="tu1 tu2">
+    									<p class="p1">中华中式生活理事会</p>
+    									<p class="p2">（中华文化促进会中式生活理事会）</p>
+    								</div>
+    							</li>
+    							<li class="l clearfix">
+    								<p class="p">合作单位</p>
+    								<div class="tu3">
+    									<img src="images/cont6-pic3.png" height="51" width="100" alt="">
+    									<img src="images/cont6-pic4.png" height="51" width="103" alt="">
+    								</div>
+    							</li>
+    							<li class="clearfix">
+    								<p class="p">集团企业</p>
+    								<div class="text">
+    									<p>中桥联合国际传媒广告（北京）有限公司</p>
+    									<p>华木坊文化传媒（北京）有限公司</p>
+    									<p>北京木成金营销顾问有限公司</p>
+    									<p>北京华文影仕文化传媒有限公司</p>
+    								</div>
+    							</li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="cont7 clerfix">
+    				<div class="gWidth clearfix">
+    					<div class="d7 clearfix">
+    						<h3>分支机构</h3>
+    						<img src="images/cont7-pic1.png" height="355" width="426" alt="">
+    						<div class="fr">
+    							<div class="text1">
+    								<p class="p1">点击查看更多地址</p>
+   									<ul>
+    									<li>
+    										<p>上海机构驻地：</p>
+    										<p>上海市普陀区中山北路1958号华源世界广场1801室</p>
+    									</li>
+    									<li>
+    										<p>福建仙游驻地：</p>
+    										<p>福建省莆田市仙游县鲤南镇a2区b栋3层（无限极楼上）</p>
+    									</li>
+
+    									<li>
+    										<p>浙江东阳驻地：</p>
+    										<p>浙江省东阳市吴宁街道城南东路1号南山宾馆六楼</p>
+    									</li>
+    								</ul>
+    							</div>
+    							<div class="text2">
+									<p class="p1">公司总部：</p>
+									<p>地址：北京市丰台区南方庄2号院3号楼和合大厦3层</p>
+									<p>邮编：100079</p>
+									<p>电话：010-67648198</p>
+									<p>前台：010-57510181</p>
+									<p c>传真：010-67648198</p>
+    								
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>	
+
+    		<div class="footer">
+    			<p>中桥联合国际传媒广告（北京）有限公司 版权所有       京公网安备11010602004750号-3</p>
+    		</div>
+
+    	</div>
+    </body>
+</html>
